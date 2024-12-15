@@ -28,6 +28,7 @@ const articlesForPage: CollectionEntry<'blog'>[] =allBlogArticles.slice((current
         </div>
 
         <!-- Pagination -->
-         <Pagination currentPage={currentPage} totalPages={totalPages} />
+         <Pagination currentPage={currentPage} totalPages={totalPages} disablePrevious={currentPage === 1} 
+         disableNext={currentPage === totalPages} />
 
 </MainLayout>
